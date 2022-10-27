@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: #fffcf6;
+            overflow-x: hidden;
+            
+        }
+        
+          #logo{
+            width:50px;
+          }
+
+          .tags a{
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+        
+          }
+
+          .tags a:hover{
+            color:red;
+          }
+
+        
+        
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color: #fffcf6;
+            border-bottom: 1px solid black;
+
+            padding: 10px;
+            /* border-bottom: 2px solid grey; */
+            position: sticky;
+            top:0;
+            z-index: 1;
+
+        }
+
+        .tags{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 50%;
+        }
+        .maincont{
+            position: relative;
+            top:15vh;
+            left:8vw;
+            width:90vw;
+            display: flex;
+            
+            /* background-color: aliceblue; */
+        }
+
+        .content{
+            position: relative;
+            top:19vh;
+            width: 30vw;
+            /* background-color: aqua; */
+
+        }
+
+        button{
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border: 2px solid red;
+            border-radius: 3px;
+            background: linear-gradient(to left, #fffffe 50%, #ff0000 50%) right;
+            background-size: 200%;
+            transition: .5s ease-out;
+        }
+
+        button:hover{
+            background-position: left;
+
+        }
+
+        #dosa{
+            
+            animation: float;
+            animation-duration: 10s;
+            position: relative;
+            animation:float 3s linear infinite;
+  
+
+        }
+
+        @keyframes float{
+        0%, 100%{
+            transform: translateY(0vh);
+        }
+        50%{
+            transform: translateX(3vw);
+        }
+        }
+
+        .spl{
+
+            position: relative;
+            top: 20vh;
+            /* background-color: #ff0000; */
+          
+            
+        }
+
+        .headings{
+            width: 100%;
+            display: block;
+           text-align: center;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .red{
+            color: #ff0000;
+        }
+
+        .temp{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left:8vw;
+            width:85vw;
+            flex-wrap: wrap;
+        }
+
+        .tempitem{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width:30%;
+            background-color:hsl(0deg 28% 95%);
+            padding:10px;
+            margin-top: 7px;
+            cursor: pointer;
+            
+           
+        }
+
+        .tempitem img{
+            width:60px;
+        }
+
+        
+
+
+
+ 
+
+.overlay {
+  position: absolute;
+  bottom:100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height:0%;
+  
+  transition: 1s ease;
+}
+
+.tempitem:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  
+  position: absolute;
+  /* -webkit-transform: translate(100%, 100%);
+  -ms-transform: translate(100%, 100%);
+  transform: translate(100%, 100%); */
+ 
+}
+
+.overlay img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+
+
+.itemcont{
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left:8vw;
+            width:85vw;
+            flex-wrap: wrap;
+           
+         
+}
+
+.items{
+
+    display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width:30%;
+            
+            background-color:hsl(0deg 28% 95%);
+            padding:10px;
+            margin-top: 7px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+}
+
+.itmimg{
+    width:70%;
+    
+    border-radius:30px ;
+}
+
+.dsp{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.price{
+    background-color: #ff0000;
+    padding: 6px;
+    border-radius: 3px;
+    color:#fffcf6
+}
+
+
+.popular{
+    position: relative;
+    top:30vh;
+}
+
+
+.reach{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left:8vw;
+    width:85vw;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+#reach{
+    position: relative;
+    top:30vh;
+}
+
+.cnt{
+    position: relative;
+    width: 50%;
+    width:30%;
+    padding:10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+}
+
+.gallery{
+    position: relative;
+    top:40vh;
+}
+
+
+
+
+.ri{
+
+        width:100%;
+        margin-bottom: 20px;
+        
+}
+
+
+
+.ov{
+
+    
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+
+
+}
+
+
+.cnt:hover .ov {
+  bottom: 0;
+  height: 100%;
+}
+
+
+.text {
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.reviews{
+    position: relative;
+    top:35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left:8vw;
+    width:85vw;
+
+}
+
+.reviewitm{
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    background-color:hwb(0 0% 100%);
+    padding:10px;
+    height: 300px;
+    border: 10px solid hwb(0deg 82% 15%);
+
+}
+.rim{
+    position: relative;
+    top:-80px;
+    border-radius: 200px;
+    width: 130px;
+   
+    border: 10px solid hwb(0deg 82% 15%);
+    
+
+}
+
+.rdp{
+
+    /* font-style: italic; */
+    
+    font-size: large;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  /* * {
+    scrollbar-width: thin;
+    scrollbar-color: #d7b9df #ffffff;
+  } */
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: hsl(0deg 28% 95%);;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: hsl(287, 98%, 82%);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+  .ordernow{
+    position: relative;
+    top:40vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 100px;
+    background-color:hsl(0deg 28% 95%);
+    padding: 15px;
+    /* margin-left:8vw; */
+    width:84vw;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+  }
+
+
+ 
+
+  .oim{
+    width:40%;
+    margin-right: 20px;
+    border-radius: 5px;
+    
+  }
+  .ordernow{
+    display: flex;
+  }
+
+  .fe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .na, .ad{
+    margin:5px;
+    margin:1rem 0;
+    border-radius: 8px;
+    height:50px;
+    width:46%;
+    border: 1px solid black;
+    
+    
+
+  }
+
+  .ad{
+    width: 100%;
+    height: 150px;
+  }
+
+
+  .designedby{
+        position: relative;
+        top:40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#000000;
+        
+  }
+
+  .designedbyimg{
+    width:30px;
+    margin-right: 4px;
+  }
+
+  
+
+
+  
+
+  
+
+
+
+
+
+
+
+       
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+    <div class="navbar">
+
+
+
+
+    
+        <img id="logo" src="logo2.png" alt="Logo"/>
+
+
+        <div class="tags">
+
+            <a href="#home"> Home</a>           
+            <a href= "#spl"> Speciality</a>
+            <a href="#popular"> Popular </a>
+            <a href="#gallery"> Gallery</a>
+            <a href="#reviews">  Review</a>
+            <a href="#ordernow"> Order</a>
+
+        </div>
+
+
+
+    </div>
+
+
+<section id="home">
+
+   <div class="maincont">
+
+
+
+    <div class="content">
+
+        <h1>
+            FOOD MADE WITH LOVE
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat autem laborum quisquam nostrum optio, ut blanditiis quasi distinctio tempore, neque debitis voluptatum, voluptatibus consequatur sunt iste sequi natus velit nemo.
+        </p>
+
+     <a   href="#ordernow" ><button id="orderNow" >
+
+
+            Order Now
+
+
+        </button>
+
+    </a>
+
+    </div>
+
+
+    <img id="dosa"src="dosapng.png"/>
+
+
+
+   </div>
+
+</section>
+
+<section id="spl">
+   <div class="spl">
+           <h1 class="headings">
+                Our <span class="red"> Special </span>Dishes
+           </h1>
+
+
+
+        <div class="temp">
+
+
+          <div class="tempitem">
+
+            <div class="overlay">
+                <img class= "text"src="md.jpg"/>
+              </div>
+
+            <img src = "masaladosa.png" style="text-align: center;"/>
+
+            <h1 style="text-align: center;"> Spicy Dosa</H1>
+
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo illo luta adipisci, doloribus cum aliquid doloremque natus explicabo fuga quas, repellat obcaecati facere, assumenda iure nihil vitae deserunt incidunt. Labore.</p>
+            
+          </div>
+
+          <div class="tempitem">
+
+            <div class="overlay">
+                <img class= "text"src="cb.jpg"/>
+              </div>
+
+            
+
+            <img src = "Biriyani.png" style="text-align: center;"/>
+
+            <h1 style="text-align: center;">Chicken Biriyani</H1>
+
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, fugiat consequuntur, minima voluptates quam totam perspiciatis eius optio dolorem ipsa blanditiis velit facilis provident illum tempora quo nostrum deserunt earum! </p>
+           
+          </div>
+
+
+          <div class="tempitem">
+
+            <div class="overlay">
+                <img class= "text"src="tac.avif"/>
+              </div>
+
+          
+
+            <img src = "tacos.png" style="text-align: center;"/>
+
+            <h1 style="text-align: center;"> Mexican Taco</H1>
+
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo illo luta adipisci, doloribus cum aliquid doloremque natus explicabo fuga quas, repellat obcaecati facere, assumenda iure nihil vitae deserunt incidunt. Labore.</p>
+
+          </div>
+
+
+        </div>
+
+        
+
+
+
+
+   </div>
+
+
+</section>
+
+
+
+<section id="popular">
+
+
+
+    <div class="popular">
+
+       <h1 class="headings" > Popular <span class="red"> Foods</span></h1>
+
+
+        <div class="itemcont">
+
+
+            <div class="items">
+
+                
+                 <img src="burger.jpg" alt="burger" class="itmimg"> 
+                 
+                 <p class="dsp">Tasty Burger</p>
+                 
+                 <div class="price"> PRICE-300$-3000$ </div>
+                  
+                 <img src="rating.png" alt="" class="rating">
+
+                 <a   href="#ordernow" ><button id="orderNow" >
+
+
+                    Order Now
+        
+        
+                </button>
+        
+            </a>
+            </div>
+
+
+
+            <div class="items">
+
+                
+                <img src="Cake.jpg" alt="burger" class="itmimg"> 
+                
+                <p class="dsp">Tasty Cake</p>
+                
+                <div class="price"> PRICE-200$-3000$ </div>
+                 
+                <img src="rating.png" alt="" class="rating">
+
+                <a   href="#ordernow" ><button id="orderNow" >
+
+
+                    Order Now
+        
+        
+                </button>
+        
+            </a>
+
+           </div>
+
+
+
+           
+           <div class="items">
+
+                
+            <img src="mocktails.jpg" alt="burger" class="itmimg"> 
+            
+            <p class="dsp">Mocktail</p>
+            
+            <div class="price"> PRICE-100$-300$ </div>
+             
+            <img src="rating.png" alt="" class="rating">
+
+            <a   href="#ordernow" ><button id="orderNow" >
+
+
+                Order Now
+    
+    
+            </button>
+    
+        </a>
+
+       </div>
+
+
+
+
+       <div class="items">
+
+                
+        <img src="icecream.jpg" alt="burger" class="itmimg"> 
+        
+        <p class="dsp">Mocktail</p>
+        
+        <div class="price"> PRICE-100$-200$ </div>
+         
+        <img src="rating.png" alt="" class="rating">
+
+        <a   href="#ordernow" ><button id="orderNow" >
+
+
+            Order Now
+
+
+        </button>
+
+    </a>
+
+        </div>
+
+
+
+        <div class="items">
+
+                
+            <img src="choclate cookies.jpg" alt="burger" class="itmimg"> 
+            
+            <p class="dsp">Choclate Cookies</p>
+            
+            <div class="price"> PRICE-100$-200$ </div>
+             
+            <img src="rating.png" alt="" class="rating">
+            <a   href="#ordernow" ><button id="orderNow" >
+
+
+                Order Now
+    
+    
+            </button>
+    
+        </a>
+    
+            </div>
+
+            <div class="items">
+
+                
+                <img src="pizza.jpg" alt="burger" class="itmimg"> 
+                
+                <p class="dsp">Pizza</p>
+                
+                <div class="price"> PRICE-100$-200$ </div>
+                 
+                <img src="rating.png" alt="" class="rating">
+        
+                <a   href="#ordernow" ><button id="orderNow" >
+
+
+                    Order Now
+        
+        
+                </button>
+        
+            </a>
+        
+                </div>
+
+                <div class="items">
+
+                
+                    <img src="namkeen.jpg" alt="burger" class="itmimg"> 
+                    
+                    <p class="dsp">Namkeen</p>
+                    
+                    <div class="price"> PRICE-100$-200$ </div>
+                     
+                    <img src="rating.png" alt="" class="rating">
+            
+                    <a   href="#ordernow" ><button id="orderNow" >
+
+
+                        Order Now
+            
+            
+                    </button>
+            
+                </a>
+            
+                </div>
+
+
+                
+                <div class="items">
+
+                
+                    <img src="cupcake.jpg" alt="burger" class="itmimg"> 
+                    
+                    <p class="dsp">cup-cake</p>
+                    
+                    <div class="price"> PRICE-100$-200$ </div>
+                     
+                    <img src="rating.png" alt="" class="rating">
+            
+                    <a   href="#ordernow" ><button id="orderNow" >
+
+
+                        Order Now
+            
+            
+                    </button>
+            
+                </a>
+            
+                </div>
+
+
+                <div class="items">
+
+                
+                    <img src="breadomlete.jpg" alt="burger" class="itmimg"> 
+                    
+                    <p class="dsp">bread omlete</p>
+                    
+                    <div class="price"> PRICE-100$-200$ </div>
+                     
+                    <img src="rating.png" alt="" class="rating">
+            
+                    <a   href="#ordernow" ><button id="orderNow" >
+
+
+                        Order Now
+            
+            
+                    </button>
+            
+                </a>
+            
+                </div>
+
+
+                
+   
+   
+
+
+
+    </div>
+
+</section>
+
+
+
+  
+
+ <section id="reach">
+             <div class="reach">
+
+                <h1 class="headings" style="margin-top: 50px; margin-bottom:50px; display: block;"> How It <span class="red">Works</span> </h1>
+
+              <img src="step-1.jpg" alt="" >
+              <img src="step-2.jpg" alt="" >
+              <img src="step-3.jpg" alt="" >
+              <img src="step-4.jpg" alt="" >
+
+             </div>
+
+  </section>
+
+
+
+    <section id="gallery">
+
+
+        <div class="gallery">
+             
+        <h1 class="headings" style="display: block; margin-top: 40px;"> Our Food <span class="red">Gallery</span> </h1> 
+
+        <div class="reach">
+
+            <div class="cnt">
+
+                <div class="ov">
+                    <div class="text">
+
+                        <h1>bread omlete</h1>
+                       
+
+                    </div>
+                  </div>
+
+
+
+
+                <img src="breadomlete.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov">
+                    <div class="text">
+
+                        <h1>cupcake</h1>
+                       
+
+                    </div>
+                  </div>
+                <img src="cupcake.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>sandwich</h1> </div> </div>
+                <img src="sandwich.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>pizza</h1> </div> </div>
+                <img src="pizza.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>namkeen</h1> </div> </div>
+                <img src="namkeen.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>mocktails</h1> </div> </div>
+                <img src="mocktails.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>ice cream</h1> </div> </div>
+                <img src="icecream.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>Fried chicken</h1> </div> </div>
+                <img src="friedchicken.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>sugar candy</h1> </div> </div>
+                <img src="dhokla.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>choclate cookies</h1> </div> </div>
+                <img src="choclate cookies.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>Cake</h1> </div> </div>
+                <img src="Cake.jpg" alt="" class="ri">
+            </div>
+
+            <div class="cnt">
+                <div class="ov"> <div class="text"> <h1>Burger</h1> </div> </div>
+                <img src="burger.jpg" alt="" class="ri">
+            </div>
+
+           
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+
+    <section id="reviews">
+
+        
+        
+
+        <div class="reviews">
+
+            <h1 class="headings" style="display:block">  Reviews Of <span class="red">Critics</span></h1>
+
+            <div class="reviewitm"> 
+                <img src="pic1.png" alt="x" class="rim">
+                <img src="rating.png" alt="" class="ratim">
+
+                <p class="rdp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quasi nulla perferendis.</p>
+
+            </div>
+
+
+            <div class="reviewitm"> 
+                <img src="pic2.png" alt="x" class="rim">
+                <img src="rating.png" alt="" class="ratim">
+
+                <p class="rdp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium harum odit nisi?</p>
+
+            </div>
+
+
+            <div class="reviewitm"> 
+                <img src="pic3.png" alt="x" class="rim">
+                <img src="rating.png" alt="" class="ratim">
+
+                <p class="rdp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repudiandae magnam vitae.</p>
+
+            </div>
+
+
+            
+            
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <h1 class="headings" style=" position:relative; top:40vh"> Order <span class="red">Now</span></h1>
+
+
+    <section id="ordernow">
+
+        
+
+        <div class="ordernow">
+            <!-- <h1 class="headings"> Order <span class="red">Now</span></h1> -->
+
+           <img src="order-img.jpg" alt="" class="oim">
+
+           <div>
+              <div class="fe">
+
+               <input type="text" class="na" id="name" placeholder="Name"> 
+                <input type="text" class="na" id="email"placeholder="Email">
+                <input type="text" class="na" id ="contact"placeholder="Contact">
+                <input type="text" class="na" id="foodName"placeholder="Food Name">
+                <input type="text" class="ad" id ="adress"placeholder="Address">
+              </div>
+
+              <button style="margin-left:6px;" onclick="alertify()">
+                 Order Now
+              </button>
+           </div>
+
+
+        </div>
+
+        <div class="designedby">
+
+            <!-- <div class="designedbycont"> -->
+                <img src="copyrights.png" alt="" class="designedbyimg">
+                 <p class="designedbyp">     DESIGN BY ARUN EMMIDI</p>
+            <!-- </div> -->
+
+        </div>
+
+    </section>
+
+
+
+    <script>
+
+        
+
+        
+
+
+
+        
+
+        function alertify() {
+            if(document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("contact").value == "" || document.getElementById("foodName").value == "" || document.getElementById("adress").value == "")
+                alert("fill all the fields");
+
+            else
+                alert("Order Placed");
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </script>
+ 
+</body>
+</html>
