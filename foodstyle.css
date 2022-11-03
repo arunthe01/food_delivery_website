@@ -4,7 +4,10 @@ body{
     background-color: #fffcf6;
     overflow-x: hidden;
     
+    
 }
+
+
 
   #logo{
     width:50px;
@@ -65,11 +68,11 @@ body{
 }
 
 button{
-    background-color: rgb(255, 255, 255);
+    
     padding: 5px;
     border: 2px solid red;
     border-radius: 3px;
-    background: linear-gradient(to left, #fffffe 50%, #ff0000 50%) right;
+    background: linear-gradient(to left, #fffffe 50% , #ff0000 50% ) right;
     background-size: 200%;
     transition: .5s ease-out;
 }
@@ -135,6 +138,7 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     width:30%;
+    height: 280px;
     background-color:hsl(0deg 28% 95%);
     padding:10px;
     margin-top: 7px;
@@ -347,20 +351,24 @@ border: 10px solid hwb(0deg 82% 15%);
 
 }
 .rim{
-position: relative;
-top:-80px;
-border-radius: 200px;
+position: absolute;
+top: 50px;
 width: 130px;
-
 border: 10px solid hwb(0deg 82% 15%);
+border-radius: 50%;
+}
 
-
+.ratim{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    width: 130px;
 }
 
 .rdp{
 
 /* font-style: italic; */
 
+/* margin-right: 60px; */
 font-size: large;
 font-weight: 100;
 color: white;
@@ -454,8 +462,10 @@ margin-right: 4px;
 
 .transform:hover{
 transform:scale(1.09);
+transition-delay: 0.2s;
 
 }
+
 
 .dp{
 width: 30%;
@@ -470,3 +480,22 @@ font-family: 'Staatliches', cursive;
 padding-right: 0px;
 
 }
+
+.text{
+    font-size: 40px;
+    text-transform: uppercase;
+    color:#f83c3c;
+    font-family: 'Kolker Brush', cursive;
+}
+
+.items img:hover{
+    transform:scale(1.08);
+    transition: .5s ease-in-out;
+}
+
+.rating{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 130px;
+}
+
