@@ -5,489 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="foodstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Kolker+Brush&family=Montserrat:wght@300;600;700&family=Poppins:wght@500&family=Quicksand:wght@600;700&family=Roboto:wght@100&family=Staatliches&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <style>
 
-        body{
-            margin: 0px;
-            padding: 0px;
-            background-color: #fffcf6;
-            overflow-x: hidden;
-            
-        }
-        
-          #logo{
-            width:50px;
-          }
+<script src="food.js"></script>
 
-          .tags a{
-            text-decoration: none;
-            font-size: large;
-            font-weight: bolder;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: black;
-        
-          }
 
-          .tags a:hover{
-            color:red;
-          }
 
-        
-        
-
-        .navbar{
-            display: flex;
-            justify-content: space-between;
-            background-color: #fffcf6;
-            border-bottom: 1px solid black;
-
-            padding: 10px;
-            /* border-bottom: 2px solid grey; */
-            position: sticky;
-            top:0;
-            z-index: 1;
-
-        }
-
-        .tags{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 50%;
-        }
-        .maincont{
-            position: relative;
-            top:15vh;
-            left:8vw;
-            width:90vw;
-            display: flex;
-            
-            /* background-color: aliceblue; */
-        }
-
-        .content{
-            position: relative;
-            top:19vh;
-            width: 30vw;
-            /* background-color: aqua; */
-
-        }
-
-        button{
-            background-color: rgb(255, 255, 255);
-            padding: 5px;
-            border: 2px solid red;
-            border-radius: 3px;
-            background: linear-gradient(to left, #fffffe 50%, #ff0000 50%) right;
-            background-size: 200%;
-            transition: .5s ease-out;
-        }
-
-        button:hover{
-            background-position: left;
-
-        }
-
-        #dosa{
-            
-            animation: float;
-            animation-duration: 10s;
-            position: relative;
-            animation:float 3s linear infinite;
-  
-
-        }
-
-        @keyframes float{
-        0%, 100%{
-            transform: translateY(0vh);
-        }
-        50%{
-            transform: translateX(3vw);
-        }
-        }
-
-        .spl{
-
-            position: relative;
-            top: 20vh;
-            /* background-color: #ff0000; */
-          
-            
-        }
-
-        .headings{
-            width: 100%;
-            display: block;
-           text-align: center;
-            margin: auto;
-            margin-bottom: 40px;
-        }
-
-        .red{
-            color: #ff0000;
-        }
-
-        .temp{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left:8vw;
-            width:85vw;
-            flex-wrap: wrap;
-        }
-
-        .tempitem{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width:30%;
-            background-color:hsl(0deg 28% 95%);
-            padding:10px;
-            margin-top: 7px;
-            cursor: pointer;
-            
-           
-        }
-
-        .tempitem img{
-            width:60px;
-        }
-
-        
-
-
-
- 
-
-.overlay {
-  position: absolute;
-  bottom:100%;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  width: 100%;
-  height:0%;
-  
-  transition: 1s ease;
-}
-
-.tempitem:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  
-  position: absolute;
-  /* -webkit-transform: translate(100%, 100%);
-  -ms-transform: translate(100%, 100%);
-  transform: translate(100%, 100%); */
- 
-}
-
-.overlay img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
-
-
-
-.itemcont{
-    display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left:8vw;
-            width:85vw;
-            flex-wrap: wrap;
-           
-         
-}
-
-.items{
-
-    display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width:30%;
-            
-            background-color:hsl(0deg 28% 95%);
-            padding:10px;
-            margin-top: 7px;
-            margin-bottom: 10px;
-            cursor: pointer;
-
-}
-
-.itmimg{
-    width:70%;
-    
-    border-radius:30px ;
-}
-
-.dsp{
-    font-size: large;
-    font-weight: bolder;
-}
-
-.price{
-    background-color: #ff0000;
-    padding: 6px;
-    border-radius: 3px;
-    color:#fffcf6
-}
-
-
-.popular{
-    position: relative;
-    top:30vh;
-}
-
-
-.reach{
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left:8vw;
-    width:85vw;
-    margin-bottom: 30px;
-    margin-top: 20px;
-
-}
-
-#reach{
-    position: relative;
-    top:30vh;
-}
-
-.cnt{
-    position: relative;
-    width: 50%;
-    width:30%;
-    padding:10px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-}
-
-.gallery{
-    position: relative;
-    top:40vh;
-}
-
-
-
-
-.ri{
-
-        width:100%;
-        margin-bottom: 20px;
-        
-}
-
-
-
-.ov{
-
-    
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: hsl(0, 0%, 100%);
-  opacity: 0.8;
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-
-
-}
-
-
-.cnt:hover .ov {
-  bottom: 0;
-  height: 100%;
-}
-
-
-.text {
-  color: #000000;
-  font-size: 20px;
-  position: absolute;
-  top:50%;
-  left:50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.reviews{
-    position: relative;
-    top:35vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left:8vw;
-    width:85vw;
-
-}
-
-.reviewitm{
-    display: flex;
-    margin-top: 60px;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    background-color:hwb(0 0% 100%);
-    padding:10px;
-    height: 300px;
-    border: 10px solid hwb(0deg 82% 15%);
-
-}
-.rim{
-    position: relative;
-    top:-80px;
-    border-radius: 200px;
-    width: 130px;
-   
-    border: 10px solid hwb(0deg 82% 15%);
-    
-
-}
-
-.rdp{
-
-    /* font-style: italic; */
-    
-    font-size: large;
-    font-weight: 100;
-    color: white;
-    text-align: center;
-
-}
-
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  /* * {
-    scrollbar-width: thin;
-    scrollbar-color: #d7b9df #ffffff;
-  } */
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: hsl(0deg 28% 95%);;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: hsl(287, 98%, 82%);
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-  }
-
-  .ordernow{
-    position: relative;
-    top:40vh;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-bottom: 100px;
-    background-color:hsl(0deg 28% 95%);
-    padding: 15px;
-    /* margin-left:8vw; */
-    width:84vw;
-    margin-bottom: 30px;
-    margin-top: 20px;
-
-  }
-
-
- 
-
-  .oim{
-    width:40%;
-    margin-right: 20px;
-    border-radius: 5px;
-    
-  }
-  .ordernow{
-    display: flex;
-  }
-
-  .fe{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-  }
-
-  .na, .ad{
-    margin:5px;
-    margin:1rem 0;
-    border-radius: 8px;
-    height:50px;
-    width:46%;
-    border: 1px solid black;
-    
-    
-
-  }
-
-  .ad{
-    width: 100%;
-    height: 150px;
-  }
-
-
-  .designedby{
-        position: relative;
-        top:40vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:#000000;
-        
-  }
-
-  .designedbyimg{
-    width:30px;
-    margin-right: 4px;
-  }
-
-  
-
-
-  
-
-  
-
-
-
-
-
-
-
-       
-
-
-
-
-
-</style>
 
 </head>
 
@@ -879,10 +410,10 @@
 
                 <h1 class="headings" style="margin-top: 50px; margin-bottom:50px; display: block;"> How It <span class="red">Works</span> </h1>
 
-              <img src="step-1.jpg" alt="" >
-              <img src="step-2.jpg" alt="" >
-              <img src="step-3.jpg" alt="" >
-              <img src="step-4.jpg" alt="" >
+              <img class="transform" src="step-1.jpg" alt="" >
+              <img class = "transform" src="step-2.jpg" alt="" >
+              <img class = "transform" src="step-3.jpg" alt="" >
+              <img class = "transform" src="step-4.jpg" alt="" >
 
              </div>
 
@@ -908,7 +439,7 @@
                        
 
                     </div>
-                  </div>
+                </div>
 
 
 
@@ -997,8 +528,8 @@
 
             <h1 class="headings" style="display:block">  Reviews Of <span class="red">Critics</span></h1>
 
-            <div class="reviewitm"> 
-                <img src="pic1.png" alt="x" class="rim">
+            <div class="reviewitm transform1"> 
+                <img  src="pic1.png" alt="x" class="rim">
                 <img src="rating.png" alt="" class="ratim">
 
                 <p class="rdp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quasi nulla perferendis.</p>
@@ -1006,7 +537,7 @@
             </div>
 
 
-            <div class="reviewitm"> 
+            <div class="reviewitm transform1"> 
                 <img src="pic2.png" alt="x" class="rim">
                 <img src="rating.png" alt="" class="ratim">
 
@@ -1015,7 +546,7 @@
             </div>
 
 
-            <div class="reviewitm"> 
+            <div class="reviewitm transform1"> 
                 <img src="pic3.png" alt="x" class="rim">
                 <img src="rating.png" alt="" class="ratim">
 
@@ -1054,7 +585,15 @@
                <input type="text" class="na" id="name" placeholder="Name"> 
                 <input type="text" class="na" id="email"placeholder="Email">
                 <input type="text" class="na" id ="contact"placeholder="Contact">
-                <input type="text" class="na" id="foodName"placeholder="Food Name">
+                <!-- <input type="text" class="na" id="foodName"placeholder="Food Name"> -->
+
+                <p>Select Food Name</p>
+                <select name="cars" id="foods" class="dp">
+                    <option value="Tasty Burger">Tasty Burger</option>
+                    <option value="Tasty Cake">Tasty Cake</option>
+                    <option value="Mocktail">Mocktail</option>
+                    <option value="Choclate Cookies">Choclate Cookies</option>
+                </select>
                 <input type="text" class="ad" id ="adress"placeholder="Address">
               </div>
 
@@ -1079,42 +618,9 @@
 
 
 
-    <script>
+   
 
         
-
-        
-
-
-
-        
-
-        function alertify() {
-            if(document.getElementById("name").value == "" || document.getElementById("email").value == "" || document.getElementById("contact").value == "" || document.getElementById("foodName").value == "" || document.getElementById("adress").value == "")
-                alert("fill all the fields");
-
-            else
-                alert("Order Placed");
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-    </script>
  
 </body>
 </html>
