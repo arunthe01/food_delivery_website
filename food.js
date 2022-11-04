@@ -1,4 +1,4 @@
-
+console.log(document.getElementById("allu"));
 
 
         function OrderNow() {
@@ -21,6 +21,7 @@
             document.getElementById("email").value = "";
             document.getElementById("contact").value = "";
             document.getElementById("adress").value = "";
+            document.getElementById("foods").value="na";
         }
 
 

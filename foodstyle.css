@@ -499,3 +499,32 @@ padding-right: 0px;
     width: 130px;
 }
 
+
+
+
+.ae{
+    text-decoration: none;
+    color: rgb(255, 2, 2);
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+}
+
+
+
+
+.ae:hover{
+    color: grey;
+}
+
+.siyaram{
+    align-items: center;
+    
+    display: flex;
+}
+.rname{
+
+    margin-left: 30px;
+    font-family: 'Cinzel', serif;
+}
+
