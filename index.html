@@ -34,6 +34,7 @@
             <a href="#gallery"> Gallery</a>
             <a href="#reviews">  Review</a>
             <a href="#ordernow"> Order</a>
+            <p id="carttitle" onclick="displaycart()"> cart</p>
         </div>
     </div>
 
@@ -51,22 +52,47 @@
         <a href="#ordernow"> <button id="orderNow" >Order Now</button></a>
     </div>
 
+    
+    
+
 
     <img id="dosa"src="./images/dosapng.png"/>
+
+    <div id="cart" class="cartcontainer" style="display:none">
+
+        <div class="cartnav"> <p class="carttitle">cart</p><a href="#ordernow"> <button style="font-size:12px; height: 25px;"> Order Now </button> </a>  <p class="wrongbutton" onclick="wrongbutton()">X</p> </div>
+        
+       
+    </div>
+
+
+   
 
 
 
    </div>
 
+
+  
+   
+
 </section>
+
+
+
+
+
+
+    
+</div>
+
+
 
 <section id="spl">
    <div class="spl">
            <h1 class="headings">
                 Our <span class="red"> Special </span>Dishes
            </h1>
-
-
 
         <div class="temp">
 
@@ -157,6 +183,9 @@
                  <img src="./images/rating2.png" alt="" class="rating">
 
                  <a   href="#ordernow" ><button id="orderNow" >Order Now</button></a>
+
+                 <button id="orderNow" style="margin-top: 4px;"onclick="childiv('Tasty Burger', './images/burger.jpg', '300$')">Add to Cart</button>
+                 
             </div>
 
 
@@ -179,6 +208,7 @@
         
         
                 </button>
+                <button id="orderNow" style="margin-top: 4px;"onclick="childiv('Cake', './images/Cake.jpg', '200$')">Add to Cart</button>
         
             </a>
 
@@ -198,6 +228,8 @@
              
             <img src="./images/rating2.png" alt="" class="rating">
 
+            
+
             <a   href="#ordernow" ><button id="orderNow" >
 
 
@@ -205,9 +237,11 @@
     
     
             </button>
-    
-        </a>
+           
+            </a>
 
+        <button id="orderNow" style="margin-top: 4px;"onclick="childiv('Mocktail', './images/mocktails.jpg', '100$')">Add to Cart</button>
+    
        </div>
 
 
@@ -234,6 +268,8 @@
 
     </a>
 
+    <button id="orderNow" style="margin-top: 4px;"onclick="childiv('Icecream', './images/icecream.jpg', '100$')">Add to Cart</button>
+
         </div>
 
 
@@ -257,6 +293,10 @@
             </button>
     
         </a>
+
+        <button id="orderNow" style="margin-top: 4px;"onclick="childiv('Choclate cookies', './images/choclate cookies.jpg', '100$')">Add to Cart</button>
+
+        
     
             </div>
 
@@ -280,6 +320,8 @@
                 </button>
         
             </a>
+
+            <button id="orderNow" style="margin-top: 4px;"onclick="childiv('Pizza', './images/pizza.jpg', '200$')">Add to Cart</button>
         
                 </div>
 
@@ -302,7 +344,8 @@
             
                     </button>
             
-                </a>
+                    </a>
+                    <button id="orderNow" style="margin-top: 4px;"onclick="childiv('Namkeen', './images/namkeen.jpg', '100$')">Add to Cart</button>
             
                 </div>
 
@@ -328,6 +371,7 @@
                     </button>
             
                 </a>
+                <button id="orderNow" style="margin-top: 4px;"onclick="childiv('cup-cake', './images/cupcake.jpg', '100$')">Add to Cart</button>
             
                 </div>
 
@@ -352,17 +396,12 @@
                     </button>
             
                 </a>
+
+                <button id="orderNow" style="margin-top: 4px;"onclick="childiv('bread omlete', './images/breadomlete.jpg', '100$')">Add to Cart</button>
             
                 </div>
 
-
-                
-   
-   
-
-
-
-    </div>
+         </div>
 
 </section>
 
@@ -559,16 +598,17 @@
                     <option value="Tasty Cake">Tasty Cake</option>
                     <option value="Mocktail">Mocktail</option>
                     <option value="Choclate Cookies">Choclate Cookies</option>
+                    <option value="Cart Items">Cart Items</option>
                 </select>
                 <input type="text" class="ad" id ="adress"placeholder="Address">
               </div>
 
-              <button style="margin-left:6px;" onclick="OrderNow()">
+              <button id="done" style="margin-left:6px;" onclick="OrderNow()">
                  Order Now
               </button>
 
               <button style="margin-left:6px;" onclick="Clear()">
-                Clear
+                    Clear
              </button>
            </div>
 
@@ -587,8 +627,6 @@
     </section>
 
 
-
-   
 
         
  
