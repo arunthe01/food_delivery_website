@@ -13,6 +13,8 @@
             
         }
 
+        var i = 0;
+
 
         function Clear(){
            
@@ -31,8 +33,9 @@
         function wrongbutton(){
             document.getElementById('cart').style.display="none";
             
-
         }
+
+        
 
         
 
@@ -48,7 +51,7 @@
             img.className="imgcart";
             const button = document.createElement('p');
             button.className="buttoncart";
-            button.onclick = function(){removeitem(this)};  
+            button.onclick = function(){removeitem(button, pr)};  
             var text = document.createTextNode("x");
             button.appendChild(text);
             const textnode = document.createTextNode(title);
@@ -59,13 +62,29 @@
             mainnode.appendChild(pr);
             mainnode.appendChild(button);
             document.getElementById("cart").appendChild(mainnode);
+          
+            // i+=  parseInt(pr.value, 10)
+            
         }
 
-
-
-        function removeitem(e){
+        function removeitem(e,pr){
+            i-= pr.value;
             e.parentElement.remove();
+            console.log(i);
         }
+
+        function gotocart(){
+            displaycart();
+        }
+
+
+        // function addval(e){
+        //     i+=e.value;
+        //     console.log(i);
+        // }
+
+
+        
 
 
 
