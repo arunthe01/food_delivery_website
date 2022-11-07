@@ -12,13 +12,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Raleway&display=swap" rel="stylesheet">
        
         <script src="food.js"></script>
 
 
     </head>
 
-<body>
+<body >
 
 
     <div class="navbar">
@@ -34,9 +35,25 @@
             <a href="#gallery"> Gallery</a>
             <a href="#reviews">  Review</a>
             <a href="#ordernow"> Order</a>
-            <p id="carttitle" onclick="displaycart()"> cart</p>
+            <p id="carttitle" onclick="myBlurFunction(1)"> Cart</p>
         </div>
     </div>
+
+
+<div id="colay">
+
+    <div id="cart" class="cartcontainer">
+       
+        <div class="cartnav"> <p class="carttitle">cart</p>   <div id="cartnavitems"> <a  href="#ordernow"> <img  onclick="gotoorders()" id= "bottombutton"  src ="images/checkout.png" style="font-size:12px; height: 25px; width:30px"> </a>  <p class="wrongbutton" onclick="myBlurFunction(0)">X</p> </div> </div>
+
+      
+        
+    </div>
+
+</div>
+
+<div id="main_container"> 
+    
 
 
     <section id="home">
@@ -58,12 +75,7 @@
 
     <img id="dosa"src="./images/dosapng.png"/>
 
-    <div id="cart" class="cartcontainer" style="display:none">
-
-        <div class="cartnav"> <p class="carttitle">cart</p><a href="#ordernow"> <button style="font-size:12px; height: 25px;"> Order Now </button> </a>  <p class="wrongbutton" onclick="wrongbutton()">X</p> </div>
-        
-       
-    </div>
+    
 
 
    
@@ -253,7 +265,7 @@
                 
         <img src="./images/icecream.jpg" alt="burger" class="itmimg"> 
         
-        <p class="dsp">Mocktail</p>
+        <p class="dsp">Ice-Cream</p>
         
         <div class="price"> PRICE-100$-200$ </div>
          
@@ -629,6 +641,8 @@
         </div>
 
     </section>
+
+</div>
 
 
 

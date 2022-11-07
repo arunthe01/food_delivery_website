@@ -40,7 +40,7 @@ body{
     /* border-bottom: 2px solid grey; */
     position: sticky;
     top:0;
-    z-index: 1;
+    z-index: 3;
 
 }
 
@@ -491,7 +491,8 @@ padding-right: 0px;
 
 .items img:hover{
     transform:scale(1.08);
-    transition: .5s ease-in-out;
+    transition: .8s ease-in-out;
+    transition-delay: 0.2;
 }
 
 .rating{
@@ -529,16 +530,33 @@ padding-right: 0px;
     font-family: 'Cinzel', serif;
 }
 
-.cartcontainer{
-    position: relative;
+#cart{
+    /* position: relative;
     top:100px;
     width:20vw;
     height:30vh;
-    background-color: #000000;
+    
     float: right;
     overflow-y: scroll;
     border-radius: 10px;
+    color:#ffffff; */
+
+
+    position: absolute;
+    overflow-y: scroll;
+    background-color: #000000;
     color:#ffffff;
+    width: 500px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 30px;
+    left: 0px;
+    padding:0px;
+    margin: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
     
 }
 
@@ -552,7 +570,7 @@ padding-right: 0px;
     padding: 0px;
     margin: 0px;
     justify-content: space-between;
-    background-color: #b6831c;   
+    background-color: rgb(209, 209, 209);   
 }
 
 .carttitle{
@@ -564,17 +582,26 @@ padding-right: 0px;
     color: #000000;
     cursor: pointer;
 }
+.wrongbutton:hover{
+    color: red;
+    /* transform:scale(1.08); */
+}
 .cartitem{
+    font-family: 'Raleway', sans-serif;
     display: flex;
     margin-top: 2px;
     margin-bottom: 2px;
+    padding: 3px;
     align-items: center;
+   
     background-color: #000000;
     justify-content: space-between;
+    
+    text-transform: uppercase;
 }
 
 .imgcart{
-    width:50px;
+    width:75px;
 }
 
 .buttoncart{
@@ -588,11 +615,52 @@ padding-right: 0px;
     
 }
 .buttoncart:hover{
-   color: #b61c1c;
+   color: red;
 }
 
 .pcart{
-    font-size: 12px;
+    font-size: 16px;
+}
+
+#colay{
+    position: fixed;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(255,255,255,.8);
+    z-index: 999;
+}
+
+.blur   {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+}
+
+/* #bottombutton{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+} */
+
+.carttitle{
+    font-size: 30px;
+    font-family: 'Kolker Brush', cursive;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+#cartnavitems{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
