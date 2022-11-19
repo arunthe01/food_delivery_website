@@ -601,7 +601,15 @@ padding-right: 0px;
 }
 
 .imgcart{
-    width:75px;
+    width:25%;
+    padding-right: 30px;
+}
+
+.pricestyle{
+   /* color: red; */
+   width: 25%;
+    /* padding-right: 30px; */
+    text-align: center;
 }
 
 .buttoncart{
@@ -620,6 +628,14 @@ padding-right: 0px;
 
 .pcart{
     font-size: 16px;
+    width: 25%;
+    padding-right: 30px;
+    text-align: center;
+}
+.buttoncart{
+    width:25%;
+    text-align: center;
+    
 }
 
 #colay{

@@ -54,6 +54,7 @@
             button.onclick = function(){removeitem(button, pr)};  
             var text = document.createTextNode("x");
             button.appendChild(text);
+            pr.className = "pricestyle";
             const textnode = document.createTextNode(title);
             pr.appendChild(document.createTextNode(price));
             node.appendChild(textnode);
