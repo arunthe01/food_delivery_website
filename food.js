@@ -110,6 +110,34 @@
         }
 
 
+
+        $('document').ready(function(){
+           
+            $('.content').hide();
+            $('.content').slideDown(6000);
+
+             b = false;
+
+            function toggling(){
+               if(b){
+                $('.rname').css('color','black');
+                b = false;
+               }
+
+               else{
+                $('.rname').css('color','red');
+                b = true;
+               }
+                
+            }
+           
+           setInterval(toggling,1000);
+
+           console.log( $('#foods').val())
+          
+        })
+
+
         
 
 
